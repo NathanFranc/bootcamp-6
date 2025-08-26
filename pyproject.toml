@@ -1,15 +1,15 @@
-[project]
+[tool.poetry]
 name = "bootcamp-06-5"
 version = "0.1.0"
 description = ""
-authors = [
-    {name = "Nathan Vinicius",email = "limavinicius195@gmail.com"}
-]
+authors = ["Nathan Vinicius <linuxinicius195@gmail.com>"]
 readme = "README.md"
-requires-python = ">=3.13"
-dependencies = [
-]
+package-mode = false  # <--- ADICIONE ESTA LINHA
 
+[tool.poetry.dependencies]
+python = ">=3.13"
+pandas = "^2.0.0"
+pandera = "^0.26.0"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
